@@ -1,11 +1,26 @@
 /* Nav Bar */
 nav > ul {
   float: right;
+  clear: right;
+  font-size: 2em;
   display: none;
+}
+
+nav ul:hover {
+  display: block;
+}
+
+nav > ul li {
+  border-bottom: 1px solid black;
+  line-height: 2em;
 }
 
 .menu {
   float: right;
+}
+
+.menu:hover:first-of-type + ul {
+  display: block;
 }
 
 .name {
