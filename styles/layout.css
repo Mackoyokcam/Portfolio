@@ -1,0 +1,23 @@
+main {
+  position: relative;
+  outline: 2px solid black;
+  padding: 20px;
+  height: 70%;
+  background-color: rgba(235,235,235,0.5);
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline: 2px solid black;
+  height: 20%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline: 2px solid black;
+  height: 10%;
+}
