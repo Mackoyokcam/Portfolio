@@ -1,0 +1,75 @@
+/* Nav Bar */
+nav > ul {
+  float: right;
+  clear: right;
+  font-size: 2em;
+  display: none;
+}
+
+nav ul:hover {
+  display: block;
+}
+
+nav > ul li {
+  border-bottom: 1px solid black;
+  line-height: 2em;
+}
+
+.menu {
+  float: right;
+}
+
+.menu:hover:first-of-type + ul {
+  display: block;
+}
+
+.name {
+  float: left;
+  font-size: 5em;
+  margin-bottom: 10px;
+}
+
+.icons {
+  clear: left;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+/* main */
+.bubbles {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  /*outline: 2px solid black;*/
+}
+
+.bubble {
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 15px;
+}
+
+/* Featured projects aside */
+.featured-projects section {
+  outline: 2px solid black;
+  height: 70%;
+  width: 50%;
+  margin: 0px auto;
+  background-color: rgba(235,235,235,0.5);
+}
+
+/* Footer */
+footer > ul {
+  text-align: center;
+}
+
+footer > ul li {
+  display: inline;
+  font-size: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
