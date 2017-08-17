@@ -2,8 +2,9 @@ main {
   position: relative;
   outline: 2px solid black;
   padding: 20px;
-  height: 70%;
-  background-color: rgba(235,235,235,0.5);
+  height: 78%;
+  background-image: url('../images/background2.jpeg');
+  background-size: cover;
 }
 
 aside {
@@ -11,7 +12,8 @@ aside {
   flex-direction: column;
   justify-content: center;
   outline: 2px solid black;
-  height: 20%;
+  height: 15%;
+  background-color: rgba(120,120,120,1);
 }
 
 footer {
@@ -19,5 +21,13 @@ footer {
   flex-direction: column;
   justify-content: center;
   outline: 2px solid black;
-  height: 10%;
+  height: 7%;
+  background-color: #618685;
+}
+
+@media screen and (min-width: 640px) {
+  aside {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
