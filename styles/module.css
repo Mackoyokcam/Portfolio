@@ -2,7 +2,7 @@
 nav > ul {
   float: right;
   clear: right;
-  font-size: 2em;
+  font-size: 1.5em;
   display: none;
 }
 
@@ -13,6 +13,7 @@ nav ul:hover {
 nav > ul li {
   border-bottom: 1px solid black;
   line-height: 2em;
+  margin-left: 1em;
 }
 
 .menu {
@@ -25,7 +26,7 @@ nav > ul li {
 
 .name {
   float: left;
-  font-size: 5em;
+  font-size: 3em;
   margin-bottom: 10px;
 }
 
@@ -54,12 +55,17 @@ nav > ul li {
 }
 
 /* Featured projects aside */
-.featured-projects section {
+.project {
   outline: 2px solid black;
   height: 70%;
-  width: 50%;
+  width: 10em;
   margin: 0px auto;
   background-color: rgba(235,235,235,0.5);
+  display: inline;
+}
+
+.project:first-of-type, .project:last-of-type {
+    display: none;
 }
 
 /* Footer */
@@ -69,7 +75,26 @@ footer > ul {
 
 footer > ul li {
   display: inline;
-  font-size: 2em;
-  margin-left: 2em;
-  margin-right: 2em;
+  font-size: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media screen and (min-width: 640px) {
+  .menu {
+    display: none;
+  }
+  nav > ul {
+    display: block;
+  }
+
+  nav > ul li {
+    display: inline;
+  }
+
+  .project, .project:first-of-type, .project:last-of-type {
+    display: inline-block;
+    margin-top: 1em;
+  }
+
 }
