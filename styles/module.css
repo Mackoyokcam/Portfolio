@@ -28,6 +28,8 @@ nav > ul li {
   float: left;
   font-size: 3em;
   margin-bottom: 10px;
+  color: rgba(230,230,230,.5);
+  font-family: 'Sedgwick Ave Display', cursive;
 }
 
 .icons {
@@ -75,9 +77,10 @@ footer > ul {
 
 footer > ul li {
   display: inline;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-left: 10%;
   margin-right: 10%;
+  color: black;
 }
 
 @media screen and (min-width: 640px) {

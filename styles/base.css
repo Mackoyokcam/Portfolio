@@ -8,4 +8,5 @@ html, body {
 
 a {
   text-decoration: none;
+  color: rgba(230,230,230,1);
 }
