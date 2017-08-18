@@ -1,10 +1,37 @@
 main {
   position: relative;
   outline: 2px solid black;
-  padding: 20px;
   height: 78%;
-  background-image: url('../images/background2.jpeg');
+  background-color: black;
+  z-index: -1;
+  /*background-image: url('../images/background2.jpeg');*/
+}
+
+#background1 {
+  padding: 5px;
+  height: 640px;
+  left: 100%;
+  width: 960px;
+  background-image: url('../images/background1.jpg');
+  position: fixed;
+  z-index: -1;
+  border: 5px dashed gray;
   background-size: cover;
+  margin-top: 5%;
+}
+
+#background2 {
+  padding: 5px;
+  height: 640px;
+  left: 50%;
+  margin-left: -460px;
+  width: 960px;
+  background-image: url('../images/background2.jpeg');
+  position: fixed;
+  z-index: -1;
+  border: 5px dotted white;
+  background-size: cover;
+  margin-top: 5%;
 }
 
 aside {

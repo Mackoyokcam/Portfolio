@@ -1,3 +1,7 @@
+header {
+  padding: 20px;
+}
+
 /* Nav Bar */
 nav > ul {
   float: right;
@@ -41,20 +45,6 @@ nav > ul li {
 }
 
 /* main */
-.bubbles {
-  position: absolute;
-  bottom: 20px;
-  left: 0px;
-  width: 100%;
-  text-align: center;
-  /*outline: 2px solid black;*/
-}
-
-.bubble {
-  margin-left: 1em;
-  margin-right: 1em;
-  border-radius: 15px;
-}
 
 /* Featured projects aside */
 .project {
@@ -93,6 +83,7 @@ footer > ul li {
 
   nav > ul li {
     display: inline;
+    border: none;
   }
 
   .project, .project:first-of-type, .project:last-of-type {
