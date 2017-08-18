@@ -42,8 +42,9 @@ nav > ul li {
 
 .icons li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 10px;
   font-size: 3em;
+  line-height: 2em;
 }
 
 /* main */
@@ -63,16 +64,14 @@ nav > ul li {
 }
 
 /* Footer */
-footer > ul {
+footer ul {
   text-align: center;
 }
 
-footer > ul li {
+footer ul li {
   display: inline;
-  font-size: 1.2em;
-  margin-left: 10%;
-  margin-right: 10%;
-  color: black;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 @media screen and (min-width: 640px) {
