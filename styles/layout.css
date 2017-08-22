@@ -3,7 +3,6 @@ main {
   outline: 2px solid black;
   height: 93%;
   background-color: black;
-  z-index: -1;
   /*background-image: url('../images/background2.jpeg');*/
 }
 
@@ -14,37 +13,45 @@ main {
   width: 960px;
   background-image: url('../images/duck.png');
   position: fixed;
-  z-index: -1;
   border: 5px double white;
   background-size: cover;
   width: 480px;
   height: 320px;
   margin: 20% 0px 0px 0px;
   opacity: 0;
+  display: none;
 }
 
 #background2 {
   box-sizing: none;
   padding: 5px;
-  height: 640px;
-  left: 50%;
+  width: 480px;
+  height: 320px;
+  left: 100%;
   margin-left: -460px;
-  width: 960px;
   background-image: url('../images/ninjavenge.png');
   position: fixed;
-  z-index: -1;
   border: 5px double white;
   background-size: cover;
-  margin-top: 5%;
+  margin: 20% 0px 0px 0px;
+  display: none;
+  opacity: 0;
 }
 
 aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: fixed;
   outline: 2px solid black;
-  height: 15%;
-  background-color: rgba(120,120,120,1);
+  height: 640px;
+  width: 960px;
+  left: calc(50% - 480px);
+  top: calc(50% - 320px);
+  text-align: center;
+  background-color: black;
+}
+
+aside > p {
+  color: white;
+  margin-top: 30px;
 }
 
 footer {
@@ -54,11 +61,4 @@ footer {
   outline: 2px solid black;
   height: 7%;
   background-color: black;
-}
-
-@media screen and (min-width: 640px) {
-  aside {
-    flex-direction: row;
-    justify-content: center;
-  }
 }

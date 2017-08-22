@@ -47,6 +47,11 @@ nav > ul li {
   /*font-family: 'Jacques Francois Shadow', cursive;*/
 }
 
+p {
+  font-family: 'Sirin Stencil', cursive;
+  font-size: 3em;
+}
+
 .icons {
   clear: left;
 }
@@ -91,7 +96,7 @@ footer ul li {
   }
   nav > ul {
     display: block;
-  }
+    }
 
   nav > ul li {
     display: inline;
