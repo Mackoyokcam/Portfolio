@@ -16,9 +16,9 @@ function Carousel() {
     margin: '20% 0px 0px 0px',
     opacity: '0'
   }, 3000, function() {
-    $(backgrounds[shown]).css(left, '100%');
+    $(backgrounds[shown]).css('left', '100%');
     // $(backgrounds[shown]).css('margin', '5% 0px 0px 0px');
-    $(backgrounds[shown]).css('background-image', `url(../images/${images[i]})`);
+    $(backgrounds[shown]).css('background-image', 'url(../images/' + images[i] + ')');
   });
 
   $(backgrounds[hidden]).animate({
