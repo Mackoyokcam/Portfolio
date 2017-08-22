@@ -1,5 +1,5 @@
 'use strict';
-var images = ['background1.jpg','background2.jpeg','background3.jpg','background4.jpg','background5.jpg'];
+var images = ['duck.png','ninjavenge.png','bus-mall.png','salmon-cookie.png'];
 var backgrounds = ['#background1', '#background2'];
 var i = 2;
 var hidden = 0;
@@ -16,7 +16,7 @@ function Carousel() {
     margin: '20% 0px 0px 0px',
     opacity: '0'
   }, 3000, function() {
-    $(backgrounds[shown]).css('left', '100%');
+    $(backgrounds[shown]).css(left, '100%');
     // $(backgrounds[shown]).css('margin', '5% 0px 0px 0px');
     $(backgrounds[shown]).css('background-image', `url(../images/${images[i]})`);
   });
