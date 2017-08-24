@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio for Mark Hangarter",
+  "main": "server.js",
+  "scripts": {
+    "test": "None",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mackoyokcam/Portfolio.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Mark Hangarter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mackoyokcam/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Mackoyokcam/Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  }
+}
