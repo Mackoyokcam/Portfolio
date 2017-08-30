@@ -15,11 +15,11 @@ Project.create = function(rawData) {
 
 Project.fetchAll = function() {
   $.getJSON('/data/projects.json').then(
-      function(data, status, xhr){
+      function(data){
         Project.create(data);
       },
-      function(xhr, status, error){
-        console.log("Error: " + status);
+      function(xhr, status){
+        console.log('Error: ' + status);
       }
     );
 };
