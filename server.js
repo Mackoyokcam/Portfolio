@@ -1,9 +1,16 @@
 'use strict';
 
+const pg = require('pg');
+// const fs = require('fs');
 const express = require('express');
-const app = express();
+// const bodyParser = require('body-parser');
+const requestProxy = require('express-request-proxy'); // REVIEW: We've added a new package here to our requirements, as well as in the package.json
 const PORT = process.env.PORT || 3000;
-const requestProxy = require('express-request-proxy');
+const app = express();
+const conString = process.env.DATABASE_URL || 'postgres://postgres:kilovoltdb@localhost:5432/kilovolt'; // DONE: Don't forget to set your own conString
+const client = new pg.Client(conString);
+client.connect();
+client.on('error', err => console.error(err));
 
 // DONE: Include all of the static resources as an argument to app.use()
 app.use(express.static('./public'));
