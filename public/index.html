@@ -16,15 +16,23 @@
       <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
         <p>
           {{Intro}}
-          <!-- Hello, and welcome to my page!<br><br>
-          Click on the education tab, to view my education history.<br><br>
-          Click on the projects tab, to start a snapshot carousel of all my projects.<br><br>
-          Click on the About Me tab, to learn more about me. -->
         </p>
         <section class="article-body">{{{body}}}</section>
         <a href="#" class="read-on">Read on &rarr;</a>
       </article>
     </script>
+    <script id="repo-template" type="text/x-handlebars-template">
+     <li>
+       <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+       <p>Description: {{description}}</p>
+       <p>Language: {{language}}</p>
+       <p>Created: {{created_at}}</p>
+       <p>Last updated: {{updated_at}}</p>
+       {{#if watchers_count}}
+         <p>{{watchers_count}} watching this repo</p>
+       {{/if}}
+     </li>
+   </script>
   </head>
   <body>
     <main>
@@ -36,11 +44,12 @@
               <li><a id="education" href="#">Education(coming soon)</a></li>
               <li><a id="projects" href="#">Projects</a></li>
               <li><a href="#">About Me(coming soon)</a></li>
+              <li><a id="repos" href="/repo">GitHub Repos</a></li>
             </ul>
             <div class="icon-menu"></div>
           </nav>
         </header>
-        <aside>
+        <aside id="repo">
           <p>
             Hello, and welcome to my page!<br><br>
             Click on the education tab, to view my education history.<br><br>
@@ -67,9 +76,15 @@
 
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="vendor/scripts/handlebars.js"></script>
+  <script src="vendor/scripts/page.js"></script>
   <script src="scripts/index.js"></script>
   <script src="scripts/initialize.js"></script>
   <script src="scripts/loadImage.js"></script>
+  <script src="scripts/models/repo.js"></script>
+  <script src="scripts/controllers/repoController.js"></script>
+  <script src="scripts/views/repoView.js"></script>
+  <script src="scripts/controllers/routes.js"></script>
   <script>
     Project.fetchAll();
   </script>
