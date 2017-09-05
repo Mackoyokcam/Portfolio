@@ -5,7 +5,6 @@ var app = app || {};
   const repoController = {};
 
   repoController.index = () => {
-    $('aside').show().siblings().hide();
     app.repos.requestRepos(app.repoView.index);
   };
 

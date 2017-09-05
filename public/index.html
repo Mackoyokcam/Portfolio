@@ -12,25 +12,16 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/layout.css" />
     <link rel="stylesheet" href="styles/module.css" />
-    <script id="article-template" type="text/x-handlebars-template">
-      <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
-        <p>
-          {{Intro}}
-        </p>
-        <section class="article-body">{{{body}}}</section>
-        <a href="#" class="read-on">Read on &rarr;</a>
-      </article>
-    </script>
     <script id="repo-template" type="text/x-handlebars-template">
      <li>
        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
-       <p>Description: {{description}}</p>
+       <!-- <p>Description: {{description}}</p>
        <p>Language: {{language}}</p>
        <p>Created: {{created_at}}</p>
        <p>Last updated: {{updated_at}}</p>
        {{#if watchers_count}}
          <p>{{watchers_count}} watching this repo</p>
-       {{/if}}
+       {{/if}} -->
      </li>
    </script>
   </head>
@@ -56,6 +47,8 @@
             Click on the projects tab, to start a snapshot carousel of all my projects.<br><br>
             Click on the About Me tab, to learn more about me.
           </p>
+          <ul>
+          </ul>
         </aside>
         <div id="background1">
         </div>
@@ -78,7 +71,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="vendor/scripts/handlebars.js"></script>
   <script src="vendor/scripts/page.js"></script>
-  <script src="scripts/index.js"></script>
   <script src="scripts/initialize.js"></script>
   <script src="scripts/loadImage.js"></script>
   <script src="scripts/models/repo.js"></script>

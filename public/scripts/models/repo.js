@@ -8,7 +8,7 @@ var app = app || {};
 
   repos.requestRepos = function(callback) {
     $.get('/github/user/repos')
-    .then(data => repos.all = data, err => console.error(err)) // es6 syntax arrow functions
+    .then(data => repos.all = data, err => console.error(err))
     .then(callback);
   };
 
